@@ -1,0 +1,200 @@
+.planets-page{
+  border:2px solid red;
+  color:white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration:none;
+  font-size: 1.1rem;
+}
+.planet-cards{
+  display: flex;
+  flex-wrap: wrap;
+  /* border:2px solid red; */
+  justify-content: space-evenly;
+}
+.planet-card{
+  
+
+}
+.planet-card {
+  border: 2px solid white;
+  width: 25vw;
+  height: 30vh;
+  display: flex;
+  color: white; /* Removed !important */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  box-shadow: 0px 0px 2px pink;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+
+  /* Add hover effect */
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    color: #cce017; /* Changed text color */
+    text-decoration: none; /* Removed underline */
+  }
+
+  p {
+    margin: 8px 0;
+    color: #eee; /* Adjusted text color */
+    text-decoration: none !important;
+  }
+}
+.planet-card p{
+  /* color:red; */
+  text-decoration: none !important;
+}
+/* Add this style for the button */
+.planet-card button {
+  background-color: #3498db; /* Set your desired background color */
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.planet-card button:hover {
+  background-color: #2980b9; /* Set your desired hover color */
+}
+
+
+.residents-page h1{
+  color:white;
+  text-decoration: underline;
+
+}
+.residents-page{
+  border:2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.resident-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resident-card {
+  /* border: 1px solid #e23232; */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  width:20vw;
+  height:30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(123, 15, 217, 0.1);
+  /* background-color: #fff; */
+}
+
+.resident-name {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  width:20vw;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.resident-details {
+  padding: 10px;
+}
+
+.resident-info {
+  margin: 5px 0;
+  color: #555;
+}
+.resident-cards-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+.residents-list-container{
+  /* border:2px solid blue; */
+  /* width:90vw; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+/* App.css */
+
+body {
+  margin: 0;
+  background: #070720; /* Dark blue background color */
+}
+
+.galaxy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden; /* Keep this for the twinkling stars */
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.residents-page p{
+  color:white !important;
+  font-size: 1.2rem !important;
+}
+.planet-info {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.info-key {
+  color: #FFD700; /* Set color for keys, e.g., gold */
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.info-value {
+  color: #fff; /* Set color for values, e.g., white */
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loading p {
+  font-size: 1.5rem;
+  color: #fff; /* Set color for loading text */
+}
